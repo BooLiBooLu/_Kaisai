@@ -1,0 +1,291 @@
+*{
+    padding: 0;
+    margin: 0;
+    /*!*/
+    box-sizing: border-box; 
+    /*font-family: ;*/
+}
+
+header{
+    width: 100vw;
+    height: 100vh;
+    opacity: 0.7;
+    background: url(../img/kyoto-view.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+/*======= nav =======*/
+nav{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    z-index: 999;
+}
+
+.nav-pills{
+    width: auto;
+    position: fixed;
+    top:0;
+    background-color: rgba(228, 228, 221, 0.8);
+}
+
+.nav-link{
+    margin: 10px;
+    color: black;
+}
+
+/*##*/
+.nav-pills .nav-link.active, .nav-pills .show>.nav-link{
+    background-color: rgba(45, 45, 37, 1);
+}
+
+a:hover{
+    color: grey;
+}
+
+.dropdown-menu[x-placement^=bottom], .dropdown-menu[x-placement^=top]{
+    right: 0px;
+}
+
+/*btn*/
+.btn-outline-success{
+    color: whitesmoke;
+    background-color: rgba(45, 45, 37, 1);
+    border-color: rgba(45, 45, 37, 1);
+}
+
+.btn-outline-success:hover{
+    background-color: rgba(79, 79, 64, 1);
+    border-color: rgba(79, 79, 64, 1);
+}
+
+.home-title{
+    width: 500px;
+    height: 500px;
+    color: rgba(227, 227, 221, 1);
+    font-size: 72px;
+    position: relative;
+    top: 65%;
+    left: 15%;
+}
+
+/*z-index*/
+main{
+    /* margin-top: auto; */
+    position: relative;
+    /* top: 60px; */
+}
+
+
+.container{
+    padding: 20px;
+}
+
+/*color*/
+.bg-color{
+    background-color: rgba(201, 201, 187, 1);
+}
+
+.light-4{
+    background-color: rgba(227, 227, 221, 1);
+}
+
+.dark-4{
+    background-color: rgba(45, 45, 37, 1);
+
+}
+
+/* ======= card-img =======*/
+.card-img{
+    /*!*/
+    display: block;
+    position: relative;
+    width: 100%;
+    height: 358px;
+    opacity: 0.8;
+}
+
+.card-img-sm{
+    display: block;
+    position: relative;
+    width: 100%;
+    height: 239px;
+    opacity: 0.8;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: rgba(45, 45, 37, 0.8);
+  }
+
+.col-12, .col-xl-4, .col-xl-6{
+    position: relative;
+    padding: 0;
+}
+
+/*?*/
+.col-12:hover .overlay{ 
+    opacity: 1;
+}
+
+.overlay-text {
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+
+.about-bg{
+    width: 100vw;
+    height: auto;
+    opacity: 0.7;
+    background: url(../img/kyoto-view.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.lang-bg{
+    width: 100%;
+    height: 40%;
+    overflow: hidden;
+    /* opacity: 0.7; */
+    background: url(../img/deer.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.knowlg-bg{
+    display: flex;
+    align-items: center;
+    width: 100vw;
+    height: 75vh;
+    background: url(../img/deer.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.knowlg-content{ 
+    width: 100%;
+    text-align: center;
+    background-color: whitesmoke;
+    opacity: 0.7;
+    color: black;
+    line-height: 3em;
+    letter-spacing: 15px;
+    font-weight: bold;
+}
+
+.knowlg-content p{
+    font-size: 32px;
+}
+
+p{
+    white-space: pre-line;
+    font-size: 20px;
+    font-family: "Microsoft YaHei";
+    padding: 10px 20px 20px 20px;
+    margin: 0;
+}
+ 
+h2, h3{
+    letter-spacing: 8px;
+    text-transform: uppercase;
+    padding: 20px 30px 0 0;
+}
+.text-muted{
+
+}
+
+.btn-link{
+    color: rgba(45, 45, 37, 0.8);
+}
+
+/*======= accordion=======*/
+
+.card-header{
+    border: 1px solid black;
+    background-color: #F6F6F4;
+}
+
+.card-body{
+    border:1px solid black; 
+
+}
+.lang-intro{
+    width: 500px;
+}
+.accordion{
+    width: 500px;
+}
+
+.card-body{
+    text-align: center;
+}
+
+table{
+    display: flex;
+    justify-content: space-around;
+}
+
+/* tbody{
+    width: 75%;
+} */
+
+th, td{
+    padding: 5px;
+    border-collapse: collapse;
+    border: 1px solid black;
+}
+
+/**/
+tr:nth-child(even) {
+    background-color:#F6F6F4 ;
+  }
+
+.row{
+    justify-content: space-around;
+}
+
+
+.bg-color-sec{
+    background-color: #F6F6F4;
+    /* background-color: rgba(249, 244, 240, 1); */
+}
+
+.font-color{
+    color: #CB977C;
+}
+
+.card-img-top{
+    height: 260px;
+} 
+
+.card-text{
+    font-size: 20px;
+    padding: 0;
+    margin-top: -30px;
+}
+
+

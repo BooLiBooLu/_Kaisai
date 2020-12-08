@@ -1,0 +1,669 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kansai</title>
+
+  <!-- Bootstrap CSS -->
+  <!-- <link rel="stylesheet" href="bootstrap.min.css.map"> -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+    integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+  <!-- Style CSS code? -->
+  <link rel="stylesheet" href="style/kansai.css">
+
+  <!-- <link href="https://fonts.googleapis.com/earlyaccess/cwtexyen.css " rel="stylesheet"> -->
+
+
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <header>
+    <!--flex-column flex-sm-row?-->
+    <nav class="container">
+      <ul class="nav nav-pills">
+        <a class="nav-link active" href="#">Home</a>
+        <a class="nav-link" href="#">About</a>
+        <a class="nav-link" href="#">Knowledge</a>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true"
+            aria-expanded="false">Schedule</a>
+          <div class="dropdown-menu">
+            <a class="dropdown-item" href="#">Day-1</a>
+            <a class="dropdown-item" href="#">Day-2</a>
+            <a class="dropdown-item" href="#">Day-3</a>
+            <a class="dropdown-item" href="#">Day-4</a>
+            <a class="dropdown-item" href="#">Day-5</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#">Separated link</a>
+          </div>
+        </li>
+        <a class="nav-link" href="#">Link</a>
+        <a class="nav-link" href="#">Contact</a>
+        <!-- <li class="nav-item">
+        <a class="nav-link" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+      </li> -->
+        <!--search-->
+        <div class="navbar">
+          <form class="form-inline">
+            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+          </form>
+        </div>
+        <!--search*-->
+      </ul>
+      </div>
+    </nav>
+    <div class="home-title">
+      まいど
+    </div>
+  </header>
+
+  <!--main-->
+  <main>
+    <!--about-->
+    <div>
+      <div class="container">
+        <h2>
+          About
+          <small class="text-muted">why this website born</small>
+        </h2>
+
+        <div class="row">
+          <div class="col-12 col-xl-6">
+            <p>
+              由於選修課程（觀光日文）之期末所需,
+              目前正努力規劃著一趟前往日本的旅遊,
+              同時本人正在自學前端網頁設計的應用,
+              因此就將其二原由結合，締造出此網站。
+              <!--Link-->
+              過程中參考了許多日本旅遊相關之內容,
+              而這些內容將會全整理於「<a href="#">參考來源</a>」。
+            </p>
+          </div>
+
+          <div class="col-12 col-xl-6 about-bg">
+            <!--<p>-->
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--knowledge-->
+    <div class="knowlg-bg">
+      <div class="container knowlg-content">
+        <h2 id="k">
+          Knowledge
+          <small class="text-muted">When in Rome, do as the Romans do.</small>
+        </h2>
+        <p>
+          各個國家擁有不同文化發展,
+          所謂入境隨俗,
+          在前往旅遊前,
+          可以先初步瞭解其風俗習慣,
+          以利於更加融入其中。
+          including <a href="#">Laguage</a>, <a href="#">Pilgrimage </a>.
+        </p>
+      </div>
+    </div>
+
+    <!--language-->
+    <div class="light-4">
+      <div class="container">
+        <h3>
+          Language
+          <small class="text-muted">Regional Dialect</small>
+        </h3>
+        <div class="row">
+          <div class="lang-intro">
+            <p>
+              大家口中所謂的関西弁（關西腔調）,
+              出自於「近畿方言」這個大集合,
+              其中在「関西弁」中還有京阪神等各種不同腔調。
+
+              作者提供了認為實用且相對有趣的関西弁,
+              請點擊其例子以展開八個各自的詳細解說
+              有機會到關西地區旅遊時，也不妨試試看。
+              <!--<p>近畿方言 > 関西弁 > 京阪神</p>-->
+            </p>
+            <div class="lang-bg">
+
+            </div>
+          </div>
+
+          <!--collapse-->
+          <div class="accordion" id="accordionExample">
+            <div class="card">
+              <div class="card-header" id="headingOne">
+                <div class="mb-0">
+                  <button class="btn btn-link btn-block" type="button" data-toggle="collapse"
+                    data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                    毎度（まいど）
+                  </button>
+                </div>
+              </div>
+
+              <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+                <div class="card-body">
+                  <table>
+                    <tr>
+                      <th>関西弁</th>
+                      <td>毎度（まいど）</td>
+                    </tr>
+                    <tr>
+                      <th>標準語</th>
+                      <td>どうも</td>
+                    </tr>
+                    <tr>
+                      <th>中譯</th>
+                      <td>你好</td>
+                    </tr>
+                    <tr>
+                      <th>地域</th>
+                      <td>商用大阪話</td>
+                    </tr>
+                    <tr>
+                      <th>補充</th>
+                      <td>代替「こんにちは」當作打招呼</td>
+                    </tr>
+                    <tr>
+                      <th rowspan="2">例句</th>
+                      <td><span class="font-color">毎度</span>お世話になります（承蒙關照）</td>
+                    </tr>
+                    <tr>
+                      <td><span class="font-color">毎度</span>ありがとうございます（感謝您經常光臨惠顧）</td>
+                    </tr>
+                  </table>
+                </div>
+              </div>
+            </div>
+            <!--2nd-->
+            <div class="card">
+              <div class="card-header" id="headingTwo">
+                <div class="mb-0">
+                  <button class="btn btn-link btn-block collapsed" type="button" data-toggle="collapse"
+                    data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                    おいでやす、おこしやす
+                  </button>
+                </div>
+              </div>
+              <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                <div class="card-body">
+                  <table>
+                    <tr>
+                      <th>関西弁</th>
+                      <td>おいでやす、おこしやす</td>
+                    </tr>
+                    <tr>
+                      <th>標準語</th>
+                      <td>いらっしゃいませ、ようこそ</td>
+                    </tr>
+                    <tr>
+                      <th>中譯</th>
+                      <td>歡迎光臨</td>
+                    </tr>
+                    <tr>
+                      <th>地域</th>
+                      <td>京都方言</td>
+                    </tr>
+                  </table>
+                </div>
+              </div>
+            </div>
+
+            <!--3rd-->
+            <div class="card">
+              <div class="card-header" id="headingThree">
+                <div class="mb-0">
+                  <button class="btn btn-link btn-block collapsed" type="button" data-toggle="collapse"
+                    data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                    はる
+                  </button>
+                </div>
+              </div>
+              <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+                <div class="card-body">
+                  <table>
+                    <tr>
+                      <th>関西弁</th>
+                      <td>-はる</td>
+                    </tr>
+                    <tr>
+                      <th>標準語</th>
+                      <td>-お … になる</td>
+                    </tr>
+                    <tr>
+                      <th>用途</th>
+                      <td>尊敬語助動詞</td>
+                    </tr>
+                    <tr>
+                      <th>補充</th>
+                      <td>「なさる」的變化</td>
+                    </tr>
+                    <tr>
+                      <th>例句</th>
+                      <td>食べ<span class="font-color">はる</span>＝食べ<span class="font-color">なさる</span>＝お食べ<span class="font-color">になる</span></td>
+                    </tr>
+                  </table>
+                </div>
+              </div>
+
+              <!--4th-->
+              <div class="card">
+                <div class="card-header" id="headingFour">
+                  <div class="mb-0">
+                    <button class="btn btn-link btn-block collapsed" type="button" data-toggle="collapse"
+                      data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                      せやな
+                    </button>
+                  </div>
+                </div>
+                <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordionExample">
+                  <div class="card-body">
+                    <table>
+                      <tr>
+                        <th>関西弁</th>
+                        <td>せやな</td>
+                      </tr>
+                      <tr>
+                        <th>標準語</th>
+                        <td>そうだね</td>
+                      </tr>
+                      <tr>
+                        <th>中譯</th>
+                        <td>沒錯、對呀（肯定或認同對方的話）</td>
+                      </tr>
+                      <tr>
+                        <th>補充</th>
+                        <td>非敬語</td>
+                      </tr>
+                      <tr>
+                        <th rowspan="2">會話</th>
+                        <td>今日暑いな</td>
+                      </tr>
+                      <tr>
+                        <td><span class="font-color">せやな</span></td>
+                      </tr>
+                    </table>
+                  </div>
+                </div>
+              </div>
+
+              <!--5th-->
+              <div class="card">
+                <div class="card-header" id="headingFive">
+                  <div class="mb-0">
+                    <button class="btn btn-link btn-block collapsed" type="button" data-toggle="collapse"
+                      data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                      おおきに
+                    </button>
+                  </div>
+                </div>
+                <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordionExample">
+                  <div class="card-body">
+                    <table>
+                      <tr>
+                        <th>関西弁</th>
+                        <td>ほんまに?</td>
+                      </tr>
+                      <tr>
+                        <th>標準語</th>
+                        <td>ほんとに？マジで？</td>
+                      </tr>
+                      <tr>
+                        <th>中譯</th>
+                        <td>真的假的?</td>
+                      </tr>
+                      <tr>
+                        <th rowspan="2">會話</th>
+                        <td>昨日産屋敷家で杏壽郎見てん</td>
+                      </tr>
+                      <tr>
+                        <td>うそ<span class="font-color">やん</span>！ほんまに</td>
+                      </tr>
+                      <tr>
+                        <th rowspan="4">補充</th>
+                        <td><span class="font-color">やん、やんか</span></td>
+                      </tr>
+                      <tr>
+                        <td>年輕人使用的強調終助詞</td>
+                      </tr>
+                      <tr>
+                        <td>相當於：標準語的「ではないか」</td>
+                      </tr>
+                      <tr>
+                        <td>相當於：首都圈方言（東京附近所使用）的「じゃん」</td>
+                      </tr>
+                      <tr>
+                        <th rowspan="3">例句</th>
+                        <td>かっこいい<span class="font-color">ではないか</span></td>
+                      </tr>
+                      <tr>
+                        <td>かっこええ<span class="font-color">やん</span></td>
+                      </tr>
+                      <tr>
+                        <td>かっこいい<span class="font-color">じゃん</span></td>
+                      </tr>
+                    </table>
+                  </div>
+                </div>
+              </div>
+
+              <!--6th-->
+              <div class="card">
+                <div class="card-header" id="headingSix">
+                  <div class="mb-0">
+                    <button class="btn btn-link btn-block collapsed" type="button" data-toggle="collapse"
+                      data-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                      なんでやねん
+                    </button>
+                  </div>
+                </div>
+                <div id="collapseSix" class="collapse" aria-labelledby="headingSix" data-parent="#accordionExample">
+                  <div class="card-body">
+                    <table>
+                      <tr>
+                        <th>関西弁</th>
+                        <td>なんでやねん</td>
+                      </tr>
+                      <tr>
+                        <th>標準語</th>
+                        <td>どうして、なんで</td>
+                      </tr>
+                      <tr>
+                        <th>中譯</th>
+                        <td>啥密！為什麼啊？什麼鬼？</td>
+                      </tr>
+                      <tr>
+                        <th>來源</th>
+                        <td>漫才（日本的大眾喜劇表演藝術）的老一套的話
+                        </td>
+                      </tr>
+                      <tr>
+                        <th rowspan="3">會話</th>
+                        <td>これいくら</td>
+                      </tr>
+                      <tr>
+                        <td>300万円**や**で</td>
+                      </tr>
+                      <tr>
+                        <td>うわー高いな。ってなんでやねん！</td>
+                      </tr>
+                      <tr>
+                        <th rowspan="3">補充</th>
+                        <td>や</td>
+                      </tr>
+                      <tr>
+                        <td>斷定助動詞</td>
+                      </tr>
+                      <tr>
+                        <td>相當於：標準語的「だ」</td>
+                      </tr>
+                      <tr>
+                        <th>例句</th>
+                        <td>大阪や＝大阪だ</td>
+                      </tr>
+                    </table>
+                  </div>
+                </div>
+              </div>
+              <!--7th-->
+              <div class="card">
+                <div class="card-header" id="headingSeven">
+                  <div class="mb-0">
+                    <button class="btn btn-link btn-block collapsed" type="button" data-toggle="collapse"
+                      data-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
+                      おおきに
+                    </button>
+                  </div>
+                </div>
+                <div id="collapseSeven" class="collapse" aria-labelledby="headingSeven" data-parent="#accordionExample">
+                  <div class="card-body">
+                    <table>
+                      <tr>
+                        <th>関西弁</th>
+                        <td>おおきに</td>
+                      </tr>
+                      <tr>
+                        <th>標準語</th>
+                        <td>ありがとう</td>
+                      </tr>
+                      <tr>
+                        <th>中譯</th>
+                        <td>謝謝</td>
+                      </tr>
+                    </table>
+                  </div>
+                </div>
+              </div>
+              <!--8th-->
+              <div class="card">
+                <div class="card-header" id="headingEight">
+                  <div class="mb-0">
+                    <button class="btn btn-link btn-block collapsed" type="button" data-toggle="collapse"
+                      data-target="#collapseEight" aria-expanded="false" aria-controls="collapseEight">
+                      ほな、ほんなら
+                    </button>
+                  </div>
+                </div>
+                <div id="collapseEight" class="collapse" aria-labelledby="headingEight" data-parent="#accordionExample">
+                  <div class="card-body">
+                    <table>
+                      <tr>
+                        <th>関西弁</th>
+                        <td>ほな、ほんなら</td>
+                      </tr>
+                      <tr>
+                        <th>標準語</th>
+                        <td>それでは</td>
+                      </tr>
+                      <tr>
+                        <th>中譯</th>
+                        <td>那麼、再見</td>
+                      </tr>
+                      <tr>
+                        <th>補充</th>
+                        <td>相當於：首都圈方言的「じゃあ」」</td>
+                      </tr>
+                    </table>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--language*-->
+
+      <!--pilgrimage -->
+      <div class="bg-color-sec">
+        <div class="container">
+          <h3>
+            Pilgrimage
+            <small class="text-muted">Rules Step by Step</small>
+          </h3>
+          <p>
+            日本最引人入勝的不外乎就是各式各樣的<span class="font-color">神社和神宮</span>,
+            這些建築甚至被列入<span class="font-color">世界文化遺產</span>和<span class="font-color">日本重要文化財</span>,
+            進入這些美不勝收的境地前該知道些什麼或準備什麼?
+            首先在<span class="font-color">鳥居牌坊前</span>就必須畢恭畢敬並且極誠懇的<span class="font-color">鞠躬</span>,
+            接下來將會透過圖片和簡述來告訴你如何<span class="font-color">淨心和淨身</span>。
+          </p>
+          <div class="row">
+            <div class="card" style="width: 16rem;">
+              <img src="img/step1.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <p class="card-text">
+                  <span class="font-color">右</span>手，取水杓，
+                  舀一瓢水，
+                  掌心向指頭淋下。</p>
+              </div>
+            </div>
+            <div class="card" style="width: 16rem;">
+              <img src="img/step2.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <p class="card-text">
+                  <span class="font-color">左</span>手，取水杓，
+                  舀一瓢水，
+                  掌心向指頭淋下。</p>
+              </div>
+            </div>
+            <div class="card" style="width: 16rem;">
+              <img src="img/step3.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <p class="card-text">
+                  <span class="font-color">右手</span>，
+                  先舀一瓢水，
+                  <span class="font-color">交到左手</span>再漱口吐掉。</p>
+              </div>
+            </div>
+            <div class="card" style="width: 16rem;">
+              <img src="img/step4.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <p class="card-text">
+                  舀一瓢水，
+                  兩手把水杓<span class="font-color">倒立</span>，
+                  將柄洗淨。</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!--??-->
+      <div class="">
+        <div class=" container">
+          <h3>
+            ###########
+            <small class="text-muted">Rules Step by Step</small>
+          </h3>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis explicabo fuga, tempora vel voluptates in
+            pariatur maiores optio fugiat voluptatem deleniti cum nihil omnis quae, perferendis necessitatibus esse
+            inventore? Facere!
+          </p>
+        </div>
+      </div>
+
+
+
+      <!--Schedule-->
+      <div class="bg-color">
+        <div class="container justify-content-center">
+          <h2>
+            Schedule
+            <small class="text-muted">Lorem ipsum dolor sit amet</small>
+          </h2>
+  
+          <div class="row">
+            <!--Day1-->
+            <div class="col-12 col-xl-6">
+              <a href="schedule.html#day1">
+                <img class="card-img" src="img/Fushimi-Inari-Taisha.jpg">
+                <div class="overlay">
+                  <div class="overlay-text">Hello</div>
+                </div>
+              </a>
+  
+            </div>
+            <!--Day2-->
+            <div class="col-12 col-xl-6">
+              <a href="schedule.html#day2">
+                <img class="card-img" src="img/Kiyomizu.jpg">
+                <div class="overlay">
+                  <div class="overlay-text">Hello</div>
+                </div>
+              </a>
+            </div>
+          </div>
+  
+  
+          <!--2nd row-->
+          <div class="row">
+            <!--Day3-->
+            <div class="col-12 col-xl-4">
+              <!--link target?-->
+              <a href="schedule.html#day3" target="_top">
+                <img class="card-img-sm" src="img/glico.jpg">
+                <div class="overlay">
+                  <div class="overlay-text">Hello</div>
+                </div>
+              </a>
+            </div>
+            <!--Day4-->
+            <div class="col-12 col-xl-4">
+              <a href="schedule.html#day4">
+                <img class="card-img-sm" src="img/nara.jpg">
+                <div class="overlay">
+                  <div class="overlay-text">Hello</div>
+                </div>
+              </a>
+            </div>
+            <!--Day5-->
+            <div class="col-12 col-xl-4">
+              <a href="schedule.html#day5">
+                <img class="card-img-sm" src="img/Todaiji.jpg">
+                <div class="overlay">
+                  <div class="overlay-text">Hello</div>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!--Link-->
+      <div class="">
+        <div class="container">
+          <div class="box">
+            <h2>
+              Link
+              <small class="text-muted">Lorem ipsum dolor sit amet</small>
+            </h2>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec pretium ante erat, vitae sodales mi
+              varius quis. Etiam vestibulum lorem vel urna tempor, eu fermentum odio aliquam. Aliquam consequat urna
+              vitae ipsum pulvinar, in blandit purus eleifend.
+            </p>
+          </div>
+        </div>
+      </div>
+  </main>
+
+  <footer>
+    <div class="container">
+      <div class="box">
+        <!--What's going on-->
+        <h2>Hello</h2>
+        <h2>
+          Contact
+          <small class="text-muted">Lorem ipsum dolor sit amet</small>
+        </h2>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec pretium ante erat, vitae sodales mi varius
+          quis. Etiam vestibulum lorem vel urna tempor, eu fermentum odio aliquam. Aliquam consequat urna vitae ipsum
+          pulvinar, in blandit purus eleifend.
+        </p>
+      </div>
+    </div>
+  </footer>
+
+
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+    integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js"
+    integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s"
+    crossorigin="anonymous"></script>
+
+</body>
+
+</html>
