@@ -79,26 +79,12 @@ main{
     /* top: 60px; */
 }
 
-
 .container{
     padding: 20px;
 }
 
-/*color*/
-.bg-color{
-    background-color: rgba(201, 201, 187, 1);
-}
 
-.light-4{
-    background-color: rgba(227, 227, 221, 1);
-}
-
-.dark-4{
-    background-color: rgba(45, 45, 37, 1);
-
-}
-
-/* ======= card-img =======*/
+/*======= card-img(schedule) =======*/
 .card-img{
     /*!*/
     display: block;
@@ -116,6 +102,7 @@ main{
     opacity: 0.8;
 }
 
+/*======= card-img-hover(schedule) =======*/
 .overlay {
     position: absolute;
     top: 0;
@@ -129,16 +116,6 @@ main{
     background-color: rgba(45, 45, 37, 0.8);
   }
 
-.col-12, .col-xl-4, .col-xl-6{
-    position: relative;
-    padding: 0;
-}
-
-/*?*/
-.col-12:hover .overlay{ 
-    opacity: 1;
-}
-
 .overlay-text {
     color: white;
     font-size: 20px;
@@ -151,6 +128,16 @@ main{
     text-align: center;
   }
 
+/*======= card-img-RWD(schedule) =======*/
+.col-12:hover .overlay{ 
+   opacity: 1;
+}
+.col-12, .col-xl-4, .col-xl-6{
+   position: relative;
+   padding: 0;
+}
+
+/*======= bg =======*/
 .about-bg{
     width: 100vw;
     height: auto;
@@ -186,6 +173,7 @@ main{
     background-size: cover;
 }
 
+/*======= content-font =======*/
 .knowlg-content h2{ 
     width: 100%;
     font-size: 48px;
@@ -209,15 +197,9 @@ h2, h3{
     text-transform: uppercase;
     padding: 20px 30px 0 0;
 }
-.text-muted{
 
-}
 
-.btn-link{
-    color: rgba(45, 45, 37, 0.8);
-}
-
-/*======= accordion=======*/
+/*======= accordion(language) =======*/
 
 .card-header{
     border: 1px solid black;
@@ -244,9 +226,6 @@ table{
     justify-content: space-around;
 }
 
-/* tbody{
-    width: 75%;
-} */
 
 th, td{
     padding: 5px;
@@ -263,14 +242,9 @@ tr:nth-child(even) {
     justify-content: space-around;
 }
 
-
 .bg-color-sec{
     background-color: #F6F6F4;
     /* background-color: rgba(249, 244, 240, 1); */
-}
-
-.font-color{
-    color: #CB977C;
 }
 
 .card-img-top{
@@ -283,4 +257,35 @@ tr:nth-child(even) {
     margin-top: -30px;
 }
 
+/*======= color =======*/
+.btn-link{
+    color: rgba(45, 45, 37, 0.8);
+}
 
+.font-color{
+    color: #CB977C;
+}
+
+.bg-color{
+    background-color: rgba(201, 201, 187, 1);
+}
+
+.light-4{
+    background-color: rgba(227, 227, 221, 1);
+}
+
+.dark-4{
+    background-color: rgba(45, 45, 37, 1);
+}
+
+/*======= bootstrap =======*/
+/* .fixed-top{
+    z-index: 9999;
+} */
+
+/* .bg-color{
+} */
+
+.navbar{
+    height: 50px;
+}
