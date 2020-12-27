@@ -17,8 +17,23 @@ header{
     background-size: cover;
 }
 
+.header-bg{
+    width: 100vw;
+    height: 100vh;
+    background: url(../img/kyo-saka-na.png) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
 /*======= nav =======*/
-nav{
+.nav-link{
+    margin: 10px;
+}
+
+/*==============*/
+ nav{
     display: flex;
     justify-content: center;
     position: relative;
@@ -31,13 +46,6 @@ nav{
     top:0;
     background-color: rgba(228, 228, 221, 0.8);
 }
-
-.nav-link{
-    margin: 10px;
-    color: black;
-}
-
-/*##*/
 .nav-pills .nav-link.active, .nav-pills .show>.nav-link{
     background-color: rgba(45, 45, 37, 1);
 }
@@ -48,7 +56,8 @@ a:hover{
 
 .dropdown-menu[x-placement^=bottom], .dropdown-menu[x-placement^=top]{
     right: 0px;
-}
+} 
+/*==============*/
 
 /*btn*/
 .btn-outline-success{
@@ -138,30 +147,7 @@ main{
 }
 
 /*======= bg =======*/
-.about-bg{
-    width: 100vw;
-    height: auto;
-    opacity: 0.7;
-    background: url(../img/kyoto-view.jpg) no-repeat center center fixed;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-}
-
-.lang-bg{
-    width: 100%;
-    height: 40%;
-    overflow: hidden;
-    /* opacity: 0.7; */
-    background: url(../img/deer.jpg) no-repeat center center fixed;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-}
-
-.knowlg-bg{
+.whole-bg{
     display: flex;
     align-items: center;
     width: 100vw;
@@ -173,14 +159,51 @@ main{
     background-size: cover;
 }
 
-/*======= content-font =======*/
-.knowlg-content h2{ 
+/* .schedule-bg{
+    display: flex;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    background: url(../img/kyo-saka-na.png) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+} */
+
+.about-bg{
     width: 100%;
-    font-size: 48px;
+    height: auto;
+    opacity: 0.7;
+    background: url(../img/kyoto-view.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.lang-bg{
+    width: 100%;
+    /*======= height: auto;?=======*/
+    height: 40%;
+    overflow: hidden;
+    /* opacity: 0.7; */
+    background: url(../img/deer.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+
+/*======= content-font =======*/
+.whole-content h2{ 
+    width: 100%;
+    font-size: 46px;
     text-align: center;
     color: whitesmoke;
     line-height: 3em;
-    letter-spacing: 30px;
+    letter-spacing: 25px;
     font-weight: bold;
 }
 
@@ -262,21 +285,29 @@ tr:nth-child(even) {
     color: rgba(45, 45, 37, 0.8);
 }
 
+/*======= color 1st center =======*/
 .font-color{
-    color: #CB977C;
+    color: #B97550;
 }
 
 .bg-color{
-    background-color: rgba(201, 201, 187, 1);
+    background-color: rgb(201, 201, 187);
 }
 
+/*======= color 7th =======*/
 .light-4{
-    background-color: rgba(227, 227, 221, 1);
+    background-color: rgb(227, 227, 221);
 }
 
 .dark-4{
-    background-color: rgba(45, 45, 37, 1);
+    background-color: rgb(45, 45, 37);
 }
+
+/*======= align =======*/
+.text-center{
+    text-align: center;
+}
+
 
 /*======= bootstrap =======*/
 /* .fixed-top{
@@ -286,6 +317,23 @@ tr:nth-child(even) {
 /* .bg-color{
 } */
 
-.navbar{
+/*======= [yet] nav flex center not =======*/
+
+/* .navbar{
     height: 50px;
 }
+
+.container ul.navbar-nav{
+    padding: 0;
+    height: 34px;
+    display: flex;
+    justify-content: flex-end;
+} */
+
+
+/* =======schedule=======*/
+/* .width{
+    display: flex;
+    flex-direction: center;
+    width: 50%;
+} */
